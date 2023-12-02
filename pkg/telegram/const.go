@@ -7,7 +7,12 @@ const (
 		"Введите номер вашей группы"
 	help        = "help"
 	helpMessage = "Я помогу тебе узнать расписание на день/неделю\n" +
+		"Если группа не находится, то введи вместо английской 'C' русскую\n" +
 		"Пока только для ИиВТ"
-	groupExample = "[СБ]\\d{2}-\\d{3}-\\d"
-	fileIiVT     = "IiVT.xlsx"
+	groupExample         = "[СБC]\\d{2}-\\d{3}-\\d"
+	fileIiVT             = "IiVT.xlsx"
+	theGroupHasBeenFound = "Группа найдена"
+	theGroupWasNotfound  = "Группа не найдена\n" +
+		"Попробуйте вместо английской 'C' русскую"
+	weekOverUnder = "Неделя над/под"
 )

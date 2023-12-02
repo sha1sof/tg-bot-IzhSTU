@@ -2,10 +2,9 @@ package main
 
 import (
 	"fmt"
+	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 	"log"
 	"tg-bot/pkg/telegram"
-
-	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
 
 func main() {
@@ -13,8 +12,6 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
-	bot.Debug = true
 
 	telegramBot := telegram.NewBot(bot)
 	if err := telegramBot.Start(); err != nil {
